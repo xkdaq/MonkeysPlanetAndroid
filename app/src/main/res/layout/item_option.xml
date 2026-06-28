@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/optionRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/bg_practice_option_default"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="14dp">
+
+    <!-- 选项标签圆圈 -->
+    <TextView
+        android:id="@+id/tvOptionLabel"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:background="@drawable/bg_practice_option_label_default"
+        android:gravity="center"
+        android:textColor="@color/text_secondary"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <!-- 选项内容 -->
+    <TextView
+        android:id="@+id/tvOptionContent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_weight="1"
+        android:lineSpacingMultiplier="1.4"
+        android:textColor="@color/text_primary"
+        android:textSize="14sp" />
+
+    <!-- 状态指示 -->
+    <TextView
+        android:id="@+id/tvOptionStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"
+        android:visibility="gone" />
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 通用页面标题栏 - 参考小程序原生导航栏样式 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/titleBarRoot"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:layout_marginTop="25dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/text_primary"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <!-- 底部分隔线 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_gravity="bottom"
+        android:background="@color/bg_divider" />
+</FrameLayout>
